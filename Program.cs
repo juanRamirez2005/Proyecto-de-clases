@@ -1,33 +1,30 @@
-﻿namespace Constructores
+﻿using Main;
+
+namespace Constructores
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome, Would you like to Sing up? yes/no");
-            string answer = Console.ReadLine();
 
-            if (answer.ToLower() == "yes")
+            List<Person> initialPeople = new List<Person>
             {
-                try
-                {
-                    Console.WriteLine("Introduce your name");
-                    string name = Console.ReadLine();
+                new Person("Juan Camilo", 18),
+                new Person("Hector Andres", 34),
+                new Person("Sandra Milena", 40)
+            };
 
-                    Console.WriteLine("Now introduce your age");
-                    int age = Int32.Parse(Console.ReadLine());
+            People myclass = new People(initialPeople);
 
-                    Person person1 = new Person(name, age);
-                }
-                catch (Exception ex)
-                {
-                    Console.Write(ex.Message);
-                }
-            }
-            else 
+            foreach(Person person in initialPeople) 
             {
-                Console.WriteLine("Thanks for comming!!");
+                Console.WriteLine($"Name: {person.Name} Age {person.Age}");
             }
+            //Person person1 = new Person("Juan Camilo", 18);
+            //Person person2 = new Person("Hector Andres", 34);
+            //Person person3 = new Person("Sandra Milena", 40);
+
+
         }
     }
 }

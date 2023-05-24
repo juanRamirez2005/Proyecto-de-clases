@@ -21,8 +21,6 @@ namespace Constructores
         {
             Name = name;
             Age = age;
-
-            Console.WriteLine($"--- Hi {Name} your current age is {Age}----");
         }
     }
 }  
