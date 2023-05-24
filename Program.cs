@@ -6,7 +6,6 @@ namespace Constructores
     {
         static void Main(string[] args)
         {
-
             List<Person> initialPeople = new List<Person>
             {
                 new Person("Juan Camilo", 18),
@@ -18,13 +17,11 @@ namespace Constructores
 
             foreach(Person person in initialPeople) 
             {
-                Console.WriteLine($"Name: {person.Name} Age {person.Age}");
+                Console.WriteLine($"Name: {person.Name} Age: {person.Age}");
             }
             //Person person1 = new Person("Juan Camilo", 18);
             //Person person2 = new Person("Hector Andres", 34);
-            //Person person3 = new Person("Sandra Milena", 40);
-
-
+            //Person person3 = new Person("Sandra Milena", 40
         }
     }
 }
