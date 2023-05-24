@@ -19,9 +19,6 @@ namespace Constructores
             {
                 Console.WriteLine($"Name: {person.Name} Age: {person.Age}");
             }
-            //Person person1 = new Person("Juan Camilo", 18);
-            //Person person2 = new Person("Hector Andres", 34);
-            //Person person3 = new Person("Sandra Milena", 40
         }
     }
 }
