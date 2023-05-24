@@ -22,7 +22,7 @@ namespace Constructores
             Name = name;
             Age = age;
 
-            Console.WriteLine($"Hi {Name} your current age is {Age}");
+            Console.WriteLine($"--- Hi {Name} your current age is {Age}----");
         }
     }
 }  
