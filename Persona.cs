@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Main
+namespace Constructores
 {
     internal class Person
     {
         public string Name { get; set; }
         public int Age { get; set; }
 
-        public Person() 
+        public Person()
         {
             Name = string.Empty;
             Age = 0;
@@ -19,9 +19,10 @@ namespace Main
 
         public Person(string name, int age)
         {
-            Name = name; 
+            Name = name;
             Age = age;
+
+            Console.WriteLine($"Hi {Name} your current age is {Age}");
         }
-        
     }
-}
+}  
